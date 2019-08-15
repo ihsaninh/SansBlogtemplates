@@ -228,13 +228,11 @@ footer {
     text-align: center;
     margin-top: -30px;
     font-weight: 700;
-    font-family: "Roboto";
     margin-bottom: 10px;
     font-size: 1.3em;
     color: #3498db;
 }
 .post h6 {
-    font-family: roboto;
     margin-left: -40px;
     font-size: 13px;
     color: #5a5a5a;
@@ -347,34 +345,61 @@ footer {
     background: linear-gradient(to right, #0072ff, #00c6ff);
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
-.card {
+.related-posts .card {
     margin-right: -30px;
     margin-left: 10px;
     margin-bottom: 15px;
     height: auto;
     transition: all 0.5s;
 }
-.card:hover {
+.related-posts .card:hover {
     -webkit-box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
     cursor: pointer;
 }
-.card-img-top {
+.related-posts .card-img-top {
     height: 270px;
 }
-.card-title {
+.related-posts .card-title {
     line-height: 1.5em;
     font-weight: 500;
     font-size: 15px;
     text-align: center;
 }
-.card-title a {
+.related-posts .card-title a {
     color: #666;
     transition: all 0.5s;
 }
-.card-title a:hover {
+.related-posts .card-title a:hover {
     text-decoration: none;
     color: #3498db;
+}
+.card-list .rounded{
+    height: 200px;
+}
+.card-list {
+    margin-right: 40px;
+}
+.card-list .card {
+    border: none;
+    margin-left: 10px;
+    margin-right: -15px;
+}
+.card-list .card-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.card-list .card-title a {
+    color: #444;
+    transition: all 0.5s;
+}
+.card-list .card-title a:hover {
+    color: #111;
+    text-decoration: none;
+}
+.card-list .card-text {
+    color: #666;
+    font-size: 14px;
 }
 .related-posts {
     width: 90%;
@@ -386,7 +411,6 @@ footer {
     font-weight: 500;
     padding: 12px 20px;
 }
-
 .progress {
     position: fixed;
     top: 0;
@@ -419,13 +443,15 @@ footer {
         margin-left: 0px;
         margin-bottom: 0px;
     }
-    .card {
+    .related-posts .card {
         height: 240px;
+        margin-right: -15px;
+        margin-left: 0px;
     }
-    .card-img-top {
+    .related-posts .card-img-top {
         height: 130px;
     }
-    .card-title {
+    .related-posts .card-title {
         line-height: 1.5em;
         font-weight: 500;
         font-size: 13px;
@@ -450,11 +476,12 @@ footer {
     .author-desc h3 {
         padding-top: 30px;
     }
-    .card {
-        margin-right: -15px;
-        margin-left: 0px;
-    }
     .jumbotron .display-4 {
         padding-top: 0px;
     }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
 }
